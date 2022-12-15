@@ -3,7 +3,7 @@ FROM node:14 AS builder
 WORKDIR /usr/src/backend
 COPY src src/
 
-COPY node_modules src/api/node_modules
+# COPY node_modules src/api/node_modules
 COPY package*.json ./
 COPY tsconfig.json ./ 
 
